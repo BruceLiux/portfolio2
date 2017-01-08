@@ -1,2 +1,3 @@
-# portfolio2
-Latest version of my portfolio
+# portfolio
+My Portfolio
+My website can be found at: http://newapp.xiangliux.com
