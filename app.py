@@ -14,6 +14,7 @@ app = Flask(__name__,template_folder='templates')
 
 # Register the controllers
 app.register_blueprint(controllers.main)
+app.register_blueprint(controllers.resume)
 
 @app.errorhandler(404)
 def page_not_found(error):

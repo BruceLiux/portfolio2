@@ -1,0 +1,99 @@
+{% extends "jumbo.html" %}
+{% block content %}   
+<p lang="latex">
+\documentclass{resume} % Use the custom resume.cls style
+\linespread{0.85}
+\usepackage[left=0.7in,top=0.45in,right=0.7in,bottom=0.45in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{Xiang Liu} % Your name
+\address{2156 Stone Road, Ann Arbor, MI 48105} % Your address
+\address{(734)-358-9809 $\mid$ portfolio.xiangliux.com $\mid$ xliux@umich.edu} % Your phone number and email
+
+\begin{document}
+%----------------------------------------------------------------------------------------
+%	OBJECTIVE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Objective}
+
+{\small Seeking a Software Development Engineering Intern position utilizing professional skills in web development.}
+
+\end{rSection}
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+{\small 
+{\bf University of Michigan, Ann Arbor, MI} \hfill {\em May 2018} 
+\\ Master of Electrical and Computer Engineering \hfill { GPA: 3.3/4}
+\\ Coursework: Web Database $\&$ Information Systems; Introduction to Algorithm \\
+\\
+{\bf Zhejiang University, Hangzhou, China} \hfill {\em July 2016} 
+\\ Bachelor of Science in Information and Communication Engineering \hfill { GPA: 3.77/4}
+\\ Coursework: Coursework: Data structure $\&$ Algorithm; Intro to Computer Organization
+
+}
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Work Experience}
+{\small 
+\begin{rSubsection}{SecNeo Security Service Co.}{Hangzhou, China}{Web Engineering Intern}{September 2015-November 2015}
+\item Designed a web crawler in Python to monitor Android app status information
+\item Monitored illegal download and track download URLs
+\end{rSubsection}
+}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	PROJECT EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Project Experience}
+{\small
+\begin{rSubsection}{University of Michigan}{Ann Arbor, MI}{Web development projects for EECS 485}{September 2016-December 2016}
+\item Developed a photo album website with python in the server side and HTML/JavaScript on client side. Build a database for the album website with MySQL. Implemented user authentication and used sessions.
+\item Created a common interface (the API). Client-side will fetch data using AJAX and insert data dynamically.
+\item Implemented a single machine, multi-process, multi-threaded MapReduce server in python.
+\item Built an integrated search engine with information retrieval based on tf-idf and PageRank scores. Used Hadoop library to implement large file indexing with MapReduce.
+\end{rSubsection}
+
+\begin{rSubsection}{Zhejiang University}{Hangzhou, China}{Android App Developer}{March 2015-July 2015}
+\item Developed an Android DJI drone app as a ground station control system
+\item Implemented drone real-time user self-tracking system. Drone would follow user’s move with the speed and location information provided by user and return the video in real-time. These features went beyond the official ground station in mobile platform at that time and helped DJI to optimize their ground station application
+\item Won Second Prize in DJI App developer competition
+\end{rSubsection}
+
+\begin{rSubsection}{University of Michigan}{Ann Arbor, MI}{Undergraduate Research Assistant}{July 2015-September 2015}
+\item Designed a software-based radio system by using GNU Radio and Python. Developed a high level flow graph so that transmitter and receiver could work in duplex mode/
+\item Custom designed blocks to implement parameterized pulse-position modulation that reduced system power requirement. Implemented a predefined header which could evoke the receiver when needed.
+\item Customized USRP FPGA RX signal path and implemented real time packet detection. User could use this system to test their chips with customized signal.
+\end{rSubsection}
+
+\begin{rSubsection}{Zhejiang University}{Hangzhou, China}{Undergraduate Research Assistant}{Jan 2015-March 2015}
+\item Implemented a webcam-based real-time human gaze tracking. Use gradient-based Hough transform to pupil localization and modified the key parameters in Gaussian filter; Optimized the threshold value to accurate result.
+\item Applied orthogonal face detectors to preclude noise region. Improve minimal tracking recognition range to 15 $cm^2$.
+\end{rSubsection}
+}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Technical Strengths}
+
+{\small
+Languages: C++, Java, Python, MySQL, JavaScript, HTML, MATLAB, Verilog, LaTex 
+}
+\end{rSection}
+\end{document}
+</p>	
+{% endblock %}
