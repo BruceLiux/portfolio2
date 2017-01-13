@@ -1,11 +1,12 @@
 {% extends "jumbo.html" %}
 {% block content %}   
-	<div class="row">
+  <div class="row">
         <div class="col-md-4">
           <h2>Resume</h2>
           <p>My official resume written in LaTex. Including education experience, work and project experience. PDF version is provided. </p>
           <!-- <p><a class="btn btn-default" href="{{url_for('resume.resume_route')}}" role="button">View details &raquo;</a></p> -->
           <p><a class="btn btn-default" href="static/resume.pdf" role="button">View details &raquo;</a></p>
+
 
         </div>
         <div class="col-md-4">
@@ -18,14 +19,16 @@
           <p>This serves as my personal technical blog. The main purpose is to share my ideas and insights for a digital life. Still working on it</p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div>
-     </div>
+  </div>
 
-      <!-- <hr> -->
-     <div class="row">
+      
+  <div class="row">
         <div class="col-md-12">
-        <img src="static/xiang-pic.jpg" style="width: 100%" />
+        <!-- <script type="text/javascript">window.onload=loadimg();</script> -->
+        <script type="text/javascript" src="static/js/loadimg.js"></script>
+        <img id="photo" src="static/xiang.jpg" style="width: 100%"/>
         </div>
         
-     </div><!-- /home-page -->	
+  </div><!-- /home-page -->	
 
 {% endblock %}
