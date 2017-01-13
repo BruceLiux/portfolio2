@@ -1,3 +1,3 @@
 # portfolio
 My Portfolio
-My website can be found at: http://newapp.xiangliux.com
+My website can be found at: http://portfolio.xiangliux.com
